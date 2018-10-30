@@ -51,11 +51,11 @@ public class HomeFragment extends Fragment {
         mRecyclerView2.setLayoutManager(layoutManager2);
         mRecyclerView3.setLayoutManager(layoutManager3);
 
-        movies.add(new Movie(null, "https://http2.mlstatic.com/poster-cartaz-filme-x-man-apocalipse-D_NQ_NP_736032-MLB25882760882_082017-F.jpg"));
-        movies.add(new Movie(null, "http://www.itaucinemas.com.br/_img/_fotos_galerias/1314.jpg"));
-        movies.add(new Movie(null, "https://www.hardmusica.pt/media/k2/items/cache/16711f6dbc3d07b3bb301107011ec676_XL.jpg"));
-        movies.add(new Movie(null, "http://static1.purebreak.com.br/articles/6/51/86/@/28652-cartaz-de-guardioes-da-galaxia-620x0-3.jpg"));
-        movies.add(new Movie(null, "http://br.web.img3.acsta.net/newsv7/14/09/18/23/08/049568.jpg"));
+        movies.add(new Movie("rUrCGKepT7k", "https://http2.mlstatic.com/poster-cartaz-filme-x-man-apocalipse-D_NQ_NP_736032-MLB25882760882_082017-F.jpg"));
+        movies.add(new Movie("pABdrArL9QY", "http://www.itaucinemas.com.br/_img/_fotos_galerias/1314.jpg"));
+        movies.add(new Movie("4r0287tUEgk", "https://www.hardmusica.pt/media/k2/items/cache/16711f6dbc3d07b3bb301107011ec676_XL.jpg"));
+        movies.add(new Movie("8VN_l57QWyQ", "http://static1.purebreak.com.br/articles/6/51/86/@/28652-cartaz-de-guardioes-da-galaxia-620x0-3.jpg"));
+        movies.add(new Movie("kc_7YYwniek", "http://br.web.img3.acsta.net/newsv7/14/09/18/23/08/049568.jpg"));
 
         // specify an adapter (see also next example)
         PostersAdapter mAdapter = new PostersAdapter(movies, getContext(), getFragmentManager());

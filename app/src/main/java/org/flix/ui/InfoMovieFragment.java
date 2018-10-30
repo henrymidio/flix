@@ -25,12 +25,14 @@ public class InfoMovieFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_info_video, container, false);
 
+        final String movieId = getArguments().getString("movieId");
+
         yt = view.findViewById(R.id.thumbnail);
 
         yt.initialize("AIzaSyAAEorw2mPIaaGUpkI4BDdxYJq0mmgQnYE", new YouTubeThumbnailView.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubeThumbnailView youTubeThumbnailView, YouTubeThumbnailLoader youTubeThumbnailLoader) {
-                youTubeThumbnailLoader.setVideo("rUrCGKepT7k");
+                youTubeThumbnailLoader.setVideo(movieId);
             }
 
             @Override
